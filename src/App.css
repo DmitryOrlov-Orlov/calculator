@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+  display: block;
+  width: 320px;
+  height: 510px;
+  background-color: orange;
+  border: 1px solid red;
+  margin: 20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  color: red;
+  margin: 5px 10px;
+}
+
+.Tablo {
+  display: block;
+  height: 135px;
+  background-color: orchid;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.Tablo .name {
+  font-size: 25px;
+  padding: 5px;
+}
+
+.Tablo .formula {
+  font-size: 17px;
+  text-align: right;
+}
+
+.Tablo .actions {
+  font-size: 45px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.sectionBtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin-top: 5px;
+}
+
+.ButtonNumber {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 25px;
+  width: 74px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: chocolate;
+}
+.ButtonNumber:hover {
+  background: rgb(194, 161, 138);
 }
 
-.App-link {
-  color: #61dafb;
+.ButtonAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 74px;
+  height: 48px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: rgb(72, 155, 97);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ButtonAction:hover {
+  background: rgb(58, 27, 145);
 }
